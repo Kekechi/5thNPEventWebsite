@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+/* || RESET */
+
+img {
+  display: block;
+}
+
+/* || VARIABLES */
+
+:root {
+  /*  FONTS */
+  --FF: "Noto Sans JP", Arial, Helvetica, sans-serif;
+  --FS: 1rem;
+  --FS-XL: 2rem;
+
+  /* COLORS */
+  --BGCOLOR: #fff;
+
+  /* BORDERS */
+  --BORDER-RADIUS: 15px;
+
+  /* PADDING */
+  --PADDING-TB: 0.25em;
+  --PADDING-SIDE: 2.5%;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --FS: 1.5rem;
+  }
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.pad {
+  padding: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+}
+
+body {
+  background: var(--BGCOLOR);
+
+  font-family: var(--FF);
+}
+
+Figure {
+  width: 100%;
+}
+Figure img {
+  width: 100%;
+  height: auto;
+}
+
+.suppress-link,
+.suppress-link:visited,
+.suppress-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-anchor {
+  position: relative;
+  top: -3.5rem;
+}
