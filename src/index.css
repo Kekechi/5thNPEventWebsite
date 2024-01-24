@@ -55,7 +55,6 @@ html {
 
 body {
   background: var(--BGCOLOR);
-
   font-family: var(--FF);
 }
 
@@ -77,4 +76,88 @@ Figure img {
 .section-anchor {
   position: relative;
   top: -3.5rem;
+}
+
+/* || Home */
+.hero {
+  background: linear-gradient(to bottom, grey 0%, black 100%);
+  height: 100vh;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+}
+
+.hero-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: forwards 1s ease-in-out scaleIn;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .hero-pic-container {
+    order: 1;
+  }
+
+  .hero-pic {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* || Schedule */
+.schedule {
+  background: black;
+}
+
+/* || Sections */
+.sections {
+  background: black;
+  min-height: 100vh;
+}
+
+.section-main {
+  height: calc((100vh - 12rem) / 3);
+  position: relative;
+  transition: scale 0.1s ease-in-out;
+  margin: 1rem;
+}
+
+.section-main:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .section-main {
+    height: calc((100vh - 8rem));
+  }
+}
+
+.section-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
