@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import newspicksImg from "../../../Assets/newspicks.png";
+import newspicksImg from "../../../assets/newspicks.png";
 
 function Hero() {
   return (
