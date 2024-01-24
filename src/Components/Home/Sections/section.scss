@@ -65,7 +65,7 @@
 
       animation-name: #{$framesName};
       animation-duration: $moveDuration;
-      animation-delay: random(11500) - 11500 + ms;
+      animation-delay: -1 * random(23000) + ms;
 
       @keyframes #{$framesName} {
         from {
