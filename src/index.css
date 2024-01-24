@@ -100,6 +100,7 @@ Figure img {
   height: 100%;
   object-fit: contain;
   animation: forwards 1s ease-in-out scaleIn;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,6 +110,10 @@ Figure img {
 
   .hero-pic-container {
     order: 1;
+  }
+
+  .hero-pic {
+    margin-bottom: 0;
   }
 }
 
@@ -124,4 +129,35 @@ Figure img {
 /* || Schedule */
 .schedule {
   background: black;
+}
+
+/* || Sections */
+.sections {
+  background: black;
+  min-height: 100vh;
+}
+
+.section-main {
+  height: calc((100vh - 12rem) / 3);
+  position: relative;
+  transition: scale 0.1s ease-in-out;
+  margin: 1rem;
+}
+
+.section-main:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .section-main {
+    height: calc((100vh - 8rem));
+  }
+}
+
+.section-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
