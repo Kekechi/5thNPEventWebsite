@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Navbar } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import { Nav as BootNav } from "react-bootstrap";
-import newspicksImg from "../../Assets/newspicks.png";
+import newspicksImg from "../../assets/newspicks.png";
 
 function Nav() {
   return (
